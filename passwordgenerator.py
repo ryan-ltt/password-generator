@@ -66,12 +66,13 @@ listvar = [var1, var2, var3, var4]
 
 
 l = tk.Label(window, bg='white', width=200, text='')
-
+enter_pw = tk.Label(window, bg = "white", width = 200, text = "Enter password length")
 
 button = Button(window, text = "Generate", command = lambda:generate_pw())
 clipboard_button = Button(window, text = "Copy to clipboard", command = lambda:copy())
-button.pack()
+enter_pw.pack()
 textfield.pack()
+button.pack()
 
 c1 = tk.Checkbutton(window, text='Include Uppercase',variable=var1, onvalue = 8, offvalue = 0)
 c1.pack()
